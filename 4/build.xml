@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="codeforimpaact" default="Ant-Contrib_demo">
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+	<property file="build.properties" />
+	<target name="Ant-Contrib_demo">
+		<if>
+			<equals arg1="${company}" arg2="vakeel" />
+			<then>
+				<echo message="company name is code for impact" />
+			</then>
+			<else>
+				<echo message="company does could not find out" />
+			</else>
+		</if>
+		
+		<trycatch>
+			  <try>
+				<echo>In try</echo>
+				<fail message="fails"/>
+			  </try>
+
+			  <catch>
+				<echo>In &lt;catch&gt;.</echo>
+			  </catch>
+
+			  <finally>
+				<echo>In &lt;finally&gt;.</echo>
+			  </finally>
+		</trycatch>
+		
+		
+		<echo message="The first five letters of the alphabet are:"/>
+			<for list="a,b,c,d,e" param="letter">
+			  <sequential>
+				<echo>Letter @{letter}</echo>
+			  </sequential>
+			</for>
+			
+			
+	</target>
+	
+	
+
+</project>

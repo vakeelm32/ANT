@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="code for impact" default="first One">
+<target name="first One">
+<echo>executing first target....</echo>
+</target>
+</project>
+

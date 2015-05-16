@@ -1,0 +1,11 @@
+package com.codeforimpact.test;
+
+import junit.framework.TestCase;
+
+public class TestClass extends TestCase {
+	public void testFarzi(){
+		assertEquals(true, true);
+		System.out.println("hello");
+	}
+
+}

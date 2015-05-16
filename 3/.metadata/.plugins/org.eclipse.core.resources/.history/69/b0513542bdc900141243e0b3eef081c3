@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="codeForimpact" default="runJunit">
+	<target name="runJunit" depends="compile">
+		<junit printsummary="on">
+			<test name="com.codeforimpact.test.TestClass" />
+			<classpath>
+				<pathelement
+					location="E:\eclipse\plugins\org.junit_3.8.2.v3_8_2_v20100427-1100\junit.jar"></pathelement>
+				<pathelement location="destination"></pathelement>
+			</classpath>
+		</junit>
+	</target>
+	<target name="compile">
+		<javac srcdir="./" includeantruntime="false" destdir="destination"
+			classpath="E:\eclipse\plugins\org.junit_3.8.2.v3_8_2_v20100427-1100\junit.jar"></javac>
+	</target>
+</project>

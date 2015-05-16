@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="codeforimpact" default="run">
+	<target name="run" depends="compile">
+	<java classname="com.codeforimpact.java"/>
+	<classpath path="destination"/>
+		<echo>running.......</echo>
+	</target>
+
+	<target name="compile">
+		<javac srcdir="./src" includeantruntime="false" destdir="destination"/>
+		<echo>compiling ........</echo>
+	</target>
+</project>

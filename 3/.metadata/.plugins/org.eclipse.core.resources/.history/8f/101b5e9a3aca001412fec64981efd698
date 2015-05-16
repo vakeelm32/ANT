@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="codeforimpaact" default="warTarget">
+	<property name="jboss" value="E:\New_Study\Jboss-7.0\install\jboss-as-7.0.1.Final" />
+	<property name="jboss.deployment" value="${jboss}/standalone/deployments" />
+	<property name="base" value="." />
+	<property name="source" value="${base}/src" />
+	<target name="warTarget">
+		<war warfile="jbosswardemo.war" needxmlfile="fasle">
+			<fileset dir="${source}/webfile" />
+		</war>
+		<antcall target="deployTarget" />
+	</target>
+	<target name="deployTarget">
+		<copy file="${base}/jbosswardemo2.war" todir="${jboss.deployment}" />
+		<antcall target="startJboss" />
+	</target>
+	<target name="startJboss">
+		<exec executable="${jboss}/bin/standalone.bat"/>
+	</target>
+</project>

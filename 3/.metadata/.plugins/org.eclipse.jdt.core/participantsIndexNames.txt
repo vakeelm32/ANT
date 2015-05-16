@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+E:\New_Study\ANT\3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1512519281.index
+\WithXmlfileAntDeploy\src
+E:\New_Study\ANT\3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\277835105.index
+\JBoossAntDeploy\src
+E:\New_Study\ANT\3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3491730563.index
+\JBoossAntDeploy\src

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<property name="jboss"
+		value="E:\New_Study\Jboss-7.0\install\jboss-as-7.0.1.Final" />
+	<property name="jboss.deployment" value="${jboss}/standalone/deployments"/>
+	<property name="base" value="."/>
+	<property name="source" value="${base}/src"/>
+	<target name="warTarget">
+	<war warfile="jbosswardemo.war" needxmlfile="fasle">
+		<fileset dir="${source}/webfiles"/>
+	</war>
+	</target>
+	<target name="deployTarget">
+	<copy file="${base}/jbosswardemo.war" todir="${jboss.deployment}"/>
+	</target>
+</project>
